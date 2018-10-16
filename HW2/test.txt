@@ -1,0 +1,53 @@
+Script started on Mon 15 Oct 2018 01:29:37 PM PDT
+[kutsarv@fir:21]> ./MTFindMin 100000000 2 50000001 && ./MTFindMin 100000000 4 75000001 && ./MTFindMin 100000000 8  88000000 && ./MTFindMin 100000000 2 -1 && ./MTFindMin 100000000 4 -1 && ./MTFindMin 100000000 8 -1 
+Sequential search completed in 28 ms. Min = 0
+Threaded FindMin with parent waiting for all children completed in 27 ms. Min = 0
+Threaded FindMin with parent continually checking on children completed in 27 ms. Min = 0
+Threaded FindMin with parent waiting on a semaphore completed in 26 ms. Min = 0
+Sequential search completed in 28 ms. Min = 0
+Threaded FindMin with parent waiting for all children completed in 19 ms. Min = 0
+Threaded FindMin with parent continually checking on children completed in 27 ms. Min = 0
+Threaded FindMin with parent waiting on a semaphore completed in 18 ms. Min = 0
+Sequential search completed in 28 ms. Min = 0
+Threaded FindMin with parent waiting for all children completed in 18 ms. Min = 0
+Threaded FindMin with parent continually checking on children completed in 24 ms. Min = 0
+Threaded FindMin with parent waiting on a semaphore completed in 19 ms. Min = 0
+Sequential search completed in 29 ms. Min = 1
+Threaded FindMin with parent waiting for all children completed in 27 ms. Min = 1
+Threaded FindMin with parent continually checking on children completed in 27 ms. Min = 1
+Threaded FindMin with parent waiting on a semaphore completed in 28 ms. Min = 1
+Sequential search completed in 28 ms. Min = 1
+Threaded FindMin with parent waiting for all children completed in 19 ms. Min = 1
+Threaded FindMin with parent continually checking on children completed in 17 ms. Min = 1
+Threaded FindMin with parent waiting on a semaphore completed in 22 ms. Min = 1
+Sequential search completed in 28 ms. Min = 1
+Threaded FindMin with parent waiting for all children completed in 19 ms. Min = 1
+Threaded FindMin with parent continually checking on children completed in 15 ms. Min = 1
+Threaded FindMin with parent waiting on a semaphore completed in 25 ms. Min = 1
+[kutsarv@fir:22]> lscpu
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                8
+On-line CPU(s) list:   0-7
+Thread(s) per core:    2
+Core(s) per socket:    4
+Socket(s):             1
+NUMA node(s):          1
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 60
+Model name:            Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz
+Stepping:              3
+CPU MHz:               800.000
+BogoMIPS:              7183.94
+Virtualization:        VT-x
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              256K
+L3 cache:              8192K
+NUMA node0 CPU(s):     0-7
+[kutsarv@fir:23]> exit
+exit
+
+Script done on Mon 15 Oct 2018 01:29:52 PM PDT

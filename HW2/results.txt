@@ -1,0 +1,54 @@
+Script started on Mon 15 Oct 2018 02:19:38 PM PDT
+[kutsarv@snapper:21]> exitcat test.txt[23Gls[Kcd csc139/HW2[23Gg++ -O3 MTFindMin.c -lpthread -o MTFindMin
+[kutsarv@snapper:22]> g++ -O3 MTFindMin.c -lpthread -o MTFindMin[23Gexit[Kcat test.txt[23Gls[Kcd csc139/HW2[26G..[K[23Gvim color.s[23G[1@nano[35G[23Gcd csc35[K[23Gscript test.txt[23Gclear[K[23Gpwd[K./MTFindMin 100000000 2 50000001 && ./MTFindMin 100000000 4 75000001 && ./MTFindMin 100000000 8 88000000 && ./MT FindMin 100000000 2 -1 && ./MTFindMin 100000000 4 -1 && ./MTFindMin 100000000 8 -1
+Sequential search completed in 28 ms. Min = 0
+Threaded FindMin with parent waiting for all children completed in 27 ms. Min = 0
+Threaded FindMin with parent continually checking on children completed in 29 ms. Min = 0
+Threaded FindMin with parent waiting on a semaphore completed in 28 ms. Min = 0
+Sequential search completed in 29 ms. Min = 0
+Threaded FindMin with parent waiting for all children completed in 18 ms. Min = 0
+Threaded FindMin with parent continually checking on children completed in 26 ms. Min = 0
+Threaded FindMin with parent waiting on a semaphore completed in 18 ms. Min = 0
+Sequential search completed in 28 ms. Min = 0
+Threaded FindMin with parent waiting for all children completed in 19 ms. Min = 0
+Threaded FindMin with parent continually checking on children completed in 23 ms. Min = 0
+Threaded FindMin with parent waiting on a semaphore completed in 21 ms. Min = 0
+Sequential search completed in 28 ms. Min = 1
+Threaded FindMin with parent waiting for all children completed in 27 ms. Min = 1
+Threaded FindMin with parent continually checking on children completed in 27 ms. Min = 1
+Threaded FindMin with parent waiting on a semaphore completed in 28 ms. Min = 1
+Sequential search completed in 28 ms. Min = 1
+Threaded FindMin with parent waiting for all children completed in 19 ms. Min = 1
+Threaded FindMin with parent continually checking on children completed in 17 ms. Min = 1
+Threaded FindMin with parent waiting on a semaphore completed in 25 ms. Min = 1
+Sequential search completed in 28 ms. Min = 1
+Threaded FindMin with parent waiting for all children completed in 19 ms. Min = 1
+Threaded FindMin with parent continually checking on children completed in 16 ms. Min = 1
+Threaded FindMin with parent waiting on a semaphore completed in 23 ms. Min = 1
+[kutsarv@snapper:23]> lscpu
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                8
+On-line CPU(s) list:   0-7
+Thread(s) per core:    2
+Core(s) per socket:    4
+Socket(s):             1
+NUMA node(s):          1
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 60
+Model name:            Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz
+Stepping:              3
+CPU MHz:               3601.000
+BogoMIPS:              7183.15
+Virtualization:        VT-x
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              256K
+L3 cache:              8192K
+NUMA node0 CPU(s):     0-7
+[kutsarv@snapper:24]> exit
+exit
+
+Script done on Mon 15 Oct 2018 02:20:08 PM PDT
